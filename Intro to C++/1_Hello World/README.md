@@ -40,3 +40,14 @@ To run the program, you can save the code as `hello_world.cpp and then compile i
 
 
 
+## Identifiers
+are names that are used to identify entities in a C++ program, such as variables, functions, classes, and structures. Identifiers can be any combination of letters, digits, and underscores, but they must start with a letter or an underscore.
+
+
+## Variable names 
+are a specific type of identifier that is used to identify variables in a C++ program. Variable names must follow the same rules as identifiers, but they must also be unique within the scope of the variable.
+
+![image](https://github.com/Yashkhhurana/Cpp_Tutorial/assets/96585577/0266e261-943d-4f61-a468-deec1b2d7ec5)
+
+
+
