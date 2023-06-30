@@ -26,6 +26,7 @@ This line uses the cout object to output the "hello world" text to the console.
 
 ## return 0;// optional to use return 0;  
 }           
+![image](https://github.com/Yashkhhurana/Cpp_Tutorial/assets/96585577/ae42ba75-2e80-4d50-bc3f-5ed6ac108ed2)
 
 This line returns the value 0 from the main() function. The value 0 indicates that the program terminated successfully.
 
@@ -36,3 +37,6 @@ I hope this explanation is helpful! Let me know if you have any other questions.
 ## How to Run the Program
 
 To run the program, you can save the code as `hello_world.cpp and then compile it on vs code, codespace, or online compiler
+
+
+
