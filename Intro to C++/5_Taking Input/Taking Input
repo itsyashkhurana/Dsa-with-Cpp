@@ -1,1 +1,16 @@
-
+/* Taking Input in C++
+*This can be done using cin . cin is a predefined object that reads data from the user with the 
+*extraction operator ( >> ) (like scanf is used in case of C language).
+*Example :
+*/
+#include <iostream>
+using namespace std;
+int main() {
+ int x, y;
+ cout << "Enter two numbers: ";
+ cin >> x >> y;
+ sum = x + y;
+ // prints sum 
+ cout << sum <<endl; 
+ return 0;
+}
