@@ -2,7 +2,7 @@
 Welcome started, great to 
 see you taking first steps towards C++ language  !!!
 
-## Topics to be coverede
+## Topics to be covered
 Variables
 
 Data Types
