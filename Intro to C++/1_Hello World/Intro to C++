@@ -4,7 +4,7 @@ UNIX.C++ is closer to the compiler and faster than C language.
 C++ is both a procedural and an object-oriented programming language. It supports OOP features 
 such as polymorphism, encapsulation, and inheritance. As C++ is an object-oriented programming 
 language so it gives a clear structure to programs and allows code to be reused, lowering 
-development costs
+development costs 
 
 
 ## Variables
@@ -36,7 +36,7 @@ Some particular keywords are not allowed.
 Commas or blanks are not allowed.
 A variable name cannot start with a digit
 
-## Data Types in C++
+### Data Types in C++
 
 Data types specify the different sizes and values that can be stored in the variable. Hence, by 
 assigning different data types, we can store integers, decimals, or characters in these variables.
