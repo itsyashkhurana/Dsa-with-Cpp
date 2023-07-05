@@ -1,1 +1,267 @@
+# If statement
+An if statement is the most common conditional statement. It executes when the condition being
+checked evaluates to true.
+
+# Syntax:
+if(condition) {
+//statements
+}
+
+# Example:
+if(x > 20) {
+cout << "Value of x is greater than 20\n";
+}
+
+Output:
+CASE 1: Let value of x be 30
+Value of x is greater than 20
+
+CASE 2: Let value of x be 10
+No output in this case
+
+# Nested if-else
+
+It is simply an if-else statement inside another if-else statement.
+Syntax:
+
+if (condition - 1){
+if (condition - 2){
+//statements
+}
+else{
+//statements
+}
+}
+else{
+//statements
+}
+
+Example:
+cout << "Value of x is "
+if (x > 20){
+if(x > 100){
+cout << “very much”;
+}
+cout << “greater\n”;
+}
+else{
+cout << “smaller\n”;
+}
+
+Output:
+CASE 1: Let the value of x be 150
+The value of x is very much greater than 20
+
+CASE 2: Let the value of x be 50
+The value of x is greater than 20
+
+CASE 3: Let the value of x be 10
+The value of x is less than 20
+
+# Conditional operators
+
+These operators are used when a condition comprises more than one Boolean expression/ condition
+check.
+We have the following types of conditional operators - logical-and, logical-or and ternary operator.
+
+# Logical-and operator (&&): It is used when we want the condition to be true if both the
+expressions are true.
+Syntax:
+if(condition - 1 && condition - 2){
+// statements
+}
+
+Example:
+
+if (val >= 10 && val <= 20)
+{
+cout << "Value is in range 10 to 20."
+}
+
+Case - 1: val = 3
+Output: No output
+
+Case - 2: val = 11
+Output: Value is in range 10 to 20.
+
+Case - 3: val = 40
+Output: No output
+
+# Logical-or operator (||): This operator is used when any one of the Boolean expressions is
+evaluated as true.
+
+Syntax:
+if(condition - 1 || condition - 2){
+statement;
+}
+
+Example:
+if (val < 10 || val > 20)
+{
+cout << "Value is either greater than 20 or less than 10."
+}
+Case - 1: val = 3
+Output: Value is either greater than 20 or less than 10.
+
+Case - 2: val = 40
+Output: Value is either greater than 20 or less than 10.
+
+Case - 3: val = 11
+Output: No output
+
+# Ternary operator (?:) : It is a smaller version for the if-else statement. If the condition is true then
+statement - 1 is executed else the statement - 2 is executed.
+Syntax:
+condition ? statement - 1 : statement - 2;
+Example:
+
+//Without ternary operator
+if (val == 10)
+{
+cout << "The current value is 10\n";
+}
+else
+{
+cout << "The current value is not 10\n";
+}
+
+//With ternary operator
+val == 10 ? cout << "The current value is 10\n" : cout << "The current value is
+not 10\n";
+
+Case - 1: val = 10
+Output: The current value is 10
+
+Case - 2: val = 20
+Output: The current value is not 10
+
+NOTE: “and” can also be written instead of “&&” and “or” can also be written as
+“||”.
+
+# Switch statement
+Switch Statement is like an if-else ladder with multiple conditions, where we check for equality of a
+variable with different values.
+Syntax:
+
+switch (expression)
+{
+case x:
+// code
+break;
+case y:
+// code
+break;
+.
+.
+.
+default:
+// code
+}
+
+Example:
+switch (ch) {
+case ‘a’:
+cout << “Vowel\n”;
+break;
+case ‘e’:
+cout << “Vowel\n”;
+break;
+case ‘i’:
+cout << “Vowel\n”;
+break;
+case ‘o’:
+cout << “Vowel\n”;
+break;
+case ‘u’:
+cout << “Vowel\n”;
+break;
+default:
+cout << “Consonant\n”;
+}
+
+Output:
+Case - 1: ch = ‘a’
+Output - Vowel
+Case - 2: ch = ‘x’
+Output - Consonant
+
+# Introduction to Iterative Statements/Loops
+
+The simple dictionary meaning of loop is a structure, series, or process, the end of which is connected to
+the beginning. We have the following types of iterative statements -
+# The while loop
+# The for loop
+# The do-while loop
+
+# The For Loop
+
+The advantage of a for loop is we know exactly how many times the loop will execute even before the
+actual loop starts executing.
+
+Syntax:
+for (init-statement; condition; final-expression){
+statement
+// logic
+}
+
+# Init-statement: This statement is used to initialize or assign a starting value to a variable which
+may be altered over the course of loop (we will see this while solving examples). It is used/referred
+only once at the start of the loop.
+
+# Condition: This condition serves as a loop control statement. The loop block is executed until the
+condition evaluates to true.
+
+#Final expression: It is evaluated after each iteration of the loop. It is generally to update the
+values of the loop variables.
+
+Example:
+for(int i = 1; i < 6; i++ ){
+cout << i << " ";
+}
+
+Output:
+1 2 3 4 5
+
+# The while loop
+
+A while loop is a loop that runs through its body, known as a while statement, as long as a
+predetermined condition is evaluated as true.
+Syntax:
+
+while (condition)
+statement;
+
+Example:
+int i = 1;
+while (i <= 5)
+{
+cout << i << “ “;
+i = i + 1;
+}
+Output:
+1 2 3 4 5
+
+# The do-while loop
+
+Do-while loop tests the condition at the end of each execution for the next iteration. In other words,
+the loop is executed at least once before the condition is checked. Rest everything is the same as
+while loop.
+Syntax:
+
+do
+{
+statement;
+} while (condition);
+
+Example:
+int idx = 1;
+do
+{
+cout << idx << “ “;
+idx++;
+} while (idx <= 5);
+
+Output:
+1 2 3 4 5
+
 
