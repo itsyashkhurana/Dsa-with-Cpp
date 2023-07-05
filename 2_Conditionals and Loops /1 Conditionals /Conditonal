@@ -1,4 +1,4 @@
-# If statement
+1# If statement
 An if statement is the most common conditional statement. It executes when the condition being
 checked evaluates to true.
 
@@ -184,84 +184,5 @@ Case - 1: ch = ‘a’
 Output - Vowel
 Case - 2: ch = ‘x’
 Output - Consonant
-
-# Introduction to Iterative Statements/Loops
-
-The simple dictionary meaning of loop is a structure, series, or process, the end of which is connected to
-the beginning. We have the following types of iterative statements -
-# The while loop
-# The for loop
-# The do-while loop
-
-# The For Loop
-
-The advantage of a for loop is we know exactly how many times the loop will execute even before the
-actual loop starts executing.
-
-Syntax:
-for (init-statement; condition; final-expression){
-statement
-// logic
-}
-
-# Init-statement: This statement is used to initialize or assign a starting value to a variable which
-may be altered over the course of loop (we will see this while solving examples). It is used/referred
-only once at the start of the loop.
-
-# Condition: This condition serves as a loop control statement. The loop block is executed until the
-condition evaluates to true.
-
-#Final expression: It is evaluated after each iteration of the loop. It is generally to update the
-values of the loop variables.
-
-Example:
-for(int i = 1; i < 6; i++ ){
-cout << i << " ";
-}
-
-Output:
-1 2 3 4 5
-
-# The while loop
-
-A while loop is a loop that runs through its body, known as a while statement, as long as a
-predetermined condition is evaluated as true.
-Syntax:
-
-while (condition)
-statement;
-
-Example:
-int i = 1;
-while (i <= 5)
-{
-cout << i << “ “;
-i = i + 1;
-}
-Output:
-1 2 3 4 5
-
-# The do-while loop
-
-Do-while loop tests the condition at the end of each execution for the next iteration. In other words,
-the loop is executed at least once before the condition is checked. Rest everything is the same as
-while loop.
-Syntax:
-
-do
-{
-statement;
-} while (condition);
-
-Example:
-int idx = 1;
-do
-{
-cout << idx << “ “;
-idx++;
-} while (idx <= 5);
-
-Output:
-1 2 3 4 5
 
 
