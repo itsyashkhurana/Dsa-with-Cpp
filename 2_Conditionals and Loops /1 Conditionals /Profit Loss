@@ -1,0 +1,28 @@
+Ques:- If an item's cost price and selling price are input through the keyboard, write a program to determine whether the seller has made a profit or incurred a loss.
+
+Profit =SP-CP
+Cp =40
+SP =60
+Loss = CP-SP
+Profit  SP>CP
+Loss    CP>SP or SP<CP
+
+code:-
+#include<iostream>
+using namespace std;
+int main (){
+
+cout<<"Enter the cost price ";
+int CP;
+cin>>CP;
+cout<<" Enter the selling price";
+int SP;
+cin>>SP;
+if(SP>CP){
+cout<< " profit";
+}
+else{// SP<CP
+cout<<"loss";
+}
+
+}
