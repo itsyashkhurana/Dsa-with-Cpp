@@ -1,0 +1,10 @@
+Ques: Take positive integer input and tell if it is divisible by 5 or not.
+
+int n;
+cin>>n;
+if(n%5 ==0){
+cout <<" .....;
+}
+else {
+cout << "... ";
+}
