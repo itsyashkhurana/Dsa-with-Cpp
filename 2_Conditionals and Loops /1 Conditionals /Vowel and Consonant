@@ -1,0 +1,26 @@
+Ques: Write a program to check whether a given character is a vowel or a consonant.
+
+code:-
+
+#include<iostream>
+using namespace std;
+int main(){
+cout<<"Enter the character : ";
+char ch;
+cin>>ch;
+int ascii = (int)ch;
+if((ascii>=65 && ascii <=90) || (ascii>=97 && ascii<=122)){
+if(ch=='a'|| ch=='A'||ch=='I'|| ch=='i'||ch=='e'|| ch=='E'||ch=='o'|| ch=='O'||ch=='u'|| ch=='U'){
+cout<<"the character is the vowel ";
+}
+else{
+cout<<"the character is consonant ";
+}
+
+}
+else{
+cout<<"the character is not an alphabet";
+}
+
+
+}
