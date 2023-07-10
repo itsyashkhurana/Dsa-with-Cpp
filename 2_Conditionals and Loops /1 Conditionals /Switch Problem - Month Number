@@ -1,0 +1,40 @@
+Ques : Write a program to input month number and print total number of days in month using switch case. 
+
+ 2023 year                         Switch (condition){
+1 - Jane 31 days                          case 1:
+2 - Feb 28 days                              do this
+3 - March - 31                      }     
+4 - April 30
+3 - May -31
+6 - June 30
+7 - July - 31
+8  - Aug -31 days    
+9  - sept -30 days
+10  -oct   31 days
+11 - nov   30 days 
+12 - Dec - 31 days 
+
+code- 
+#include<iostream>
+using namespace std;
+int main(){
+int x;
+cin>>x;
+//1,3,5,7,8,10,12
+//odd..... even...
+//4,6,9,11
+//even.odd.
+//2- 28 days
+switch((x<=7 && x%2!=0) || (x>=8 && x%2==0) ){
+   case 1:
+    cout<<"31";
+}
+switch(x==4 ||x==6 ||x==9 ||x==11){
+   case 1:
+    cout<<"30";
+}
+switch(x){
+   case 2:
+    cout<<"28";
+}
+}
