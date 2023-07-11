@@ -1,0 +1,13 @@
+Ques: Print hello world ‘n’ times. Take ‘n’ as input from the user
+
+code:-
+#include<iostream>
+using namespace std;
+int main(){
+    cout<<"Enter the number: ";
+int n;
+cin>>n;
+for(int i;i<=n;i++){
+cout<<"hello world\n";
+}
+}
