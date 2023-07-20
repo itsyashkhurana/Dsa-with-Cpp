@@ -1,0 +1,64 @@
+C++ is a middle-level programming language developed by Bjarne Stroustrup in 1979 at Bell Labs.
+C++ runs on a variety of platforms, such as Windows, Mac OS, and the various versions of 
+UNIX.C++ is closer to the compiler and faster than C language.
+C++ is both a procedural and an object-oriented programming language. It supports OOP features 
+such as polymorphism, encapsulation, and inheritance. As C++ is an object-oriented programming 
+language so it gives a clear structure to programs and allows code to be reused, lowering 
+development costs 
+
+
+## Variables
+
+A variable is the title of a reserved region allocated in memory. In other words, it may be referred 
+to as the name of a memory location.
+
+Syntax for Declaring a Variable: 
+<data_type> <variable_name>
+
+Example:
+int x = 10; // here int is the data type and x is variable
+int y = 50;
+Changing values of variables: A variable's value can also be changed in the program. 
+
+Example : 
+int x = 10;
+x = 20; // now the value changes to 20
+int z = 30;
+z = 40; // now the value changes to 40
+
+NOTE: Assigning value to variable while declaring is optional.
+
+## Variables Naming Rules
+
+Variables can start from an alphabet or underscore _ or $.
+Special characters except _ and $ are not allowed.
+Some particular keywords are not allowed.
+Commas or blanks are not allowed.
+A variable name cannot start with a digit
+
+### Data Types in C++
+
+Data types specify the different sizes and values that can be stored in the variable. Hence, by 
+assigning different data types, we can store integers, decimals, or characters in these variables.
+
+The different types are :
+
+C++ int: int keyword is used to indicate integers.
+C++ char: This data type is used to store a single character.
+C++ bool: A Boolean data type is declared with bool keyword.
+C++ float : float is used to store floating-point numbers (decimals and exponentials).
+C++ double: double is used to store floating-point numbers (decimals and exponentials).
+C++ void: The void keyword means "nothing" or "no value"
+
+Identifiers in C++
+
+It is a name given to a package, class, interface, method, or variable. All identifiers must have 
+different names.
+Rules for identifiers in C++ are :
+All identifiers should begin with a letter (A to Z or a to z), $ and _ and must be unique.
+After the first character/letter, identifiers can have any combination of characters.
+A keyword cannot be used as an identifier.
+The identifiers are case sensitive.
+Whitespaces are not permitted.
+Examples of Identifiers in C++ are: 
+abc, _abc, __xyz
