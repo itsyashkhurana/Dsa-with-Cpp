@@ -1,1 +1,22 @@
+Simple Rectangular Pattern: In this type of pattern try to find the length and breadth of the rectangle and then form the loop bounds according to that only.
+Example:
 
+Pattern :
+*****
+*****
+*****
+*****
+
+Code:
+
+#include <iostream>
+using namespace std;
+int main() {
+int n = 4, m = 5;  //n- row ,m - column
+for (int i = 0; i < n; i++) {
+for (int j = 0; j < m; j++) {
+cout << "*";
+}
+cout << '\n';
+}
+}
