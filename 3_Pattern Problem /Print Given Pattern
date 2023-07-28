@@ -24,6 +24,5 @@ cout << (char) ('A' + j - 1) << " ";
 }
 cout << endl;
 }
-return 0;
 }
 
