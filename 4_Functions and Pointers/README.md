@@ -7,6 +7,7 @@ once, and use it many times.
 
 ## Why functions ?
 Because using functions makes the code neat and reusable.
+
 For example , below written code is to write a function to sum two numbers.
 #include<iostream>
 using namespace std;
