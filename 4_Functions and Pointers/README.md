@@ -5,6 +5,7 @@ You can pass data, known as parameters, into a function.
 Functions are used to perform certain actions, and they are important for reusing code: Define the code
 once, and use it many times.
 🥰
+
 # Why functions ?
 Because using functions makes the code neat and reusable.
 
