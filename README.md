@@ -1,6 +1,6 @@
 ## 🎒Cpp_Tutorial
 
-C++ tutorials are a great way to learn the language and start developing your own C++ programs, the tutorial should be written in a clear and concise way, with plenty of examples
+## C++ tutorials are a great way to learn the language and start developing your own C++ programs, the tutorial should be written in a clear and concise way, with plenty of examples
 
 The idea of Cpp_Tutorial is to Learn-n-Contribute. So a beginner will learn to code and will contribute to the upcoming ones.
 
