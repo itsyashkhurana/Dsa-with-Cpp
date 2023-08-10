@@ -17,4 +17,4 @@ C++ Operators
 
 C++ Operator Precedence and Associativity
 
-Here, we make sure that your entry to C++ language world is smooth and interesting. So we present you very simple problem statement to get familiar with the wind. Hope you will feel better here.
+Here, we make sure that your entry to C++ language world is smooth and interesting. So we present you very simple problem statement to get familiar with the wind. Hope you will feel better here. 
