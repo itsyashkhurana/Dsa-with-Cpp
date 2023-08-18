@@ -1,4 +1,5 @@
 question- State True or False
+
 A function may be called more than once from any other function.
 Solution :
 True: We can call as many times a function as we want.
