@@ -3,6 +3,7 @@
 *extraction operator ( >> ) (like scanf is used in case of C language).
 *Example :
 */
+
 #include <iostream>
 using namespace std;
 int main() {
