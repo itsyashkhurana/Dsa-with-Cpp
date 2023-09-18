@@ -7,8 +7,7 @@ A B
 A B C D
 1 2 3 4 5
 
-code:-
-
+code:- 
 #include <bits/stdc++.h>
 int main() {
 int n;
