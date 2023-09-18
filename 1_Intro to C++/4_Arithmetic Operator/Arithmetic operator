@@ -1,6 +1,7 @@
 /* Arithmetic Operators: They are used in mathematical expressions in a program. They function in 
 the same way as they do in algebra. 
 */ 
+
 #include<iostream>
 using namespace std;
 int main() {
