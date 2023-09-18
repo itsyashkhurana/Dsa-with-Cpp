@@ -232,7 +232,10 @@ cout << "Value of data using double pointer :- " <<
 **pointer2 << endl;
 return 0;
 }
+
 Output :
 Value of data :- 1
 Value of data using single pointer :- 1
 Value of data using double pointer :- 1
+
+
