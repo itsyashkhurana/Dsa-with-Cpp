@@ -1,9 +1,16 @@
-int x,y;
- cout<<"enter any two integers ";
- cin>>x>>y;
- if(x>y){
-     cout<<"First no. "<< x<<" is the largest ";
- }
- else{
-     cout<<"second no. " <<y<< " is the largest";
- }
+#include <iostream>
+using namespace std;
+int main()
+{
+int a,b,c;
+cin>>a>>b>>c;
+if(a>b && a>c){
+ cout<<a<<"lrgt";   
+}
+else if (b>a && b>c){
+    cout<<b<<"lrgt";
+}
+else {
+    cout<<c<< "lrgt";
+}
+}
