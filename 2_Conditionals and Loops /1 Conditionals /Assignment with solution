@@ -1,0 +1,174 @@
+Ques1 : Take 2 integers input and print the greatest of them.
+
+Ques2 : Given the radius of the circle predict whether numerically area of this circle is larger than the circumference or not
+
+Ques3: Any year is input through the keyboard. Write a program to determine whether the year is a leap year or not. (Considering leap year occurs after every 4 years)
+
+Ques4 : Given the length and breadth of a rectangle, write a program to find whether numerically the area of the rectangle is greater than its perimeter
+
+Ques5 : Write a program to input sides of a triangle and check whether a triangle is equilateral, scalene or isosceles triangle.
+
+Ques6 : If the marks of A, B and C are input through the keyboard, write a program to determine the student scoring least marks. 
+
+Ques7 : Given a point (x, y), write a program to find out if it lies on the x-axis, y-axis or at the origin, viz. (0, 0). 
+
+
+
+
+
+solution :
+
+
+// 1 
+// #include<iostream>
+// using namespace std;
+// int main(){
+
+// int n,m;
+// cin>>n>>m;
+// if(n>m)cout<<n;
+// else cout<<m;
+// }
+
+//2 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//  int a, c ,r;
+//  cin>>r;
+//  a = 3.14*r*r;
+//  c = 2*3.14*r;
+//  if(a>c) cout<<"area of this circle is larger than the circumference.";
+//  else if(c==a) cout<<"area of this circle is equal to the circumference ";
+//  else  cout<<"area of this circle is not larger than the circumference";
+// }
+
+// 3 
+// #include<iostream>
+// using namespace std;
+// int main(){
+// int year;
+// cin>>year;
+// if( (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)){
+//     cout<<year<<" is a leap year";
+// }
+// else {
+//     cout<<year<<" is not a leap year";
+// }
+// }
+
+//4
+// #include<iostream>
+// using namespace std;
+// int main(){
+// int area, perimeter, length, breadth;
+// cin>>length>>breadth;
+//  area = length * breadth;
+//     perimeter = 2 * (length + breadth);
+//     if(area>perimeter) cout<<"area of the rectangle is greater than its perimeter";
+//     else cout<<"area of the rectangle is not greater than its perimeter";
+// }
+
+//5 
+// #include<iostream>
+// using namespace std;
+// int main(){
+
+//     float side1, side2, side3;
+
+//     cout << "Enter the lengths of the three sides of the triangle: ";
+//     cin >> side1 >> side2 >> side3;
+
+//     if (side1 == side2 && side2 == side3) { // all sides equal 
+//         cout << "The triangle is equilateral." << endl;
+//     } else if (side1 == side2 || side2 == side3 || side1 == side3) { // any two sides equaln 
+//         cout << "The triangle is isosceles." << endl;
+//     } else {
+//         cout << "The triangle is scalene." << endl; //  all three sides have different lengths and all three angles have different measures.
+//     }
+// }
+
+//6 
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int A, B, C, leastMarks;
+
+//     cout << "Enter the marks of A: "; cin >> A;
+//     cout << "Enter the marks of B: "; cin >> B;
+//     cout << "Enter the marks of C: "; cin >> C;
+
+//     // Find the least marks
+//     leastMarks = A;  // Initialize with A's marks
+
+//     if (B < leastMarks) {
+//         leastMarks = B;
+//     }
+
+//     if (C < leastMarks) {
+//         leastMarks = C;
+//     }
+
+//     cout << "The student scoring the least marks is ";
+
+//     if (leastMarks == A)      cout << "A" << endl;
+//     else if (leastMarks == B) cout << "B" << endl;
+//     else                        cout << "C" << endl;
+    
+//     }
+
+
+// 7
+// #include <iostream>
+// using namespace std;
+// int main() {
+    
+//  double x, y;
+//     cout << "Enter the x-coordinate: "; cin >> x;
+//     cout << "Enter the y-coordinate: "; cin >> y;
+
+//      if (x == 0 && y == 0)      cout << "The point lies at the origin (0, 0)." << endl;
+//      else if (x == 0 && y != 0) cout << "The point lies on the y-axis." << endl;
+//      else if (x != 0 && y == 0) cout << "The point lies on the x-axis." << endl;
+//      else                       cout << "The point does not lie on any of the axes." << endl;
+// }
+
+//8 
+// #include <iostream>
+// #include <cmath> // for absolute value calculation
+
+// using namespace std;
+
+// int main() {
+//     int x1, y1, x2, y2, x3, y3;
+
+//     cout << "Enter the coordinates of the first point (x1, y1): ";
+//     cin >> x1 >> y1;
+
+//     cout << "Enter the coordinates of the second point (x2, y2): ";
+//     cin >> x2 >> y2;
+
+//     cout << "Enter the coordinates of the third point (x3, y3): ";
+//     cin >> x3 >> y3;
+
+//     // Check for special cases (vertical or horizontal lines) first
+//     if (x1 == x2 && x2 == x3) {
+//         // All points have the same x-coordinate (vertical line)
+//         cout << "The three points fall on a straight line." << endl;
+//     } 
+//     else if (y1 == y2 && y2 == y3) {
+//         // All points have the same y-coordinate (horizontal line)
+//         cout << "The three points fall on a straight line." << endl;
+//     } 
+//     else {
+//         // Check for same slope
+//         double slope12 = (y2 - y1) / (double)(x2 - x1); // Cast to double for precision
+//         double slope23 = (y3 - y2) / (double)(x3 - x2);
+
+//         // Either both slopes are equal (not equal to NaN) or both denominators are zero (collinear vertical lines)
+//         if (slope12 == slope23 || (isnan(slope12) && isnan(slope23))) {
+//             cout << "The three points fall on a straight line." << endl;
+//         } else {
+//             cout << "The three points do not fall on a straight line." << endl;
+//         }
+//     }
