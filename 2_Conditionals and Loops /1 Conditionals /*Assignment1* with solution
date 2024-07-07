@@ -187,3 +187,70 @@ else if (ch>='0' && ch<='9' )                       cout<< " is a digit";
 else                                                cout<<" is a special char.";
 }
 
+//9
+#include<iostream>
+using namespace std;
+int main(){
+    int x;
+    cin>>x;
+
+    switch(x>=2000){
+        case 1:
+        cout<<"2000 = "<<(x/2000)<<endl;
+        x-=(x/2000)*2000;
+    }
+
+    switch(x>=500){
+        case 1:
+        cout<<"500 = "<<(x/500)<<endl;
+        x-=(x/500)*500;
+    }
+
+    switch(x>=200){
+        case 1:
+        cout<<"200 = "<<(x/200)<<endl;
+        x-=(x/200)*200;
+    }
+
+    switch(x>=100){
+        case 1:
+        cout<<"100 = "<<(x/100)<<endl;
+        x-=(x/100)*100;
+    }
+
+    switch(x>=50){
+        case 1:
+        cout<<"50 = "<<(x/50)<<endl;
+        x-=(x/50)*50;
+    }
+
+    switch(x>=20){
+        case 1:
+        cout<<"20 = "<<(x/20)<<endl;
+        x-=(x/20)*20;
+    }
+
+    switch(x>=10){
+        case 1:
+        cout<<"10 = "<<(x/10)<<endl;
+        x-=(x/10)*10;
+    }
+    switch(x>=5){
+        case 1:
+        cout<<"5 = "<<(x/5)<<endl;
+        x-=(x/5)*5;
+    }
+
+    switch(x>=2){
+        case 1:
+        cout<<"2 = "<<(x/2)<<endl;
+        x-=(x/2)*2;
+    }
+
+    switch(x>=1){
+        case 1:
+        cout<<"1 = "<<(x/1)<<endl;
+        x-=(x/1)*1;
+    }
+}
+
