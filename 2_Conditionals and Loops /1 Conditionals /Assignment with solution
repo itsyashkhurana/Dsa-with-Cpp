@@ -12,7 +12,7 @@ Ques6 : If the marks of A, B and C are input through the keyboard, write a progr
 
 Ques7 : Given a point (x, y), write a program to find out if it lies on the x-axis, y-axis or at the origin, viz. (0, 0). 
 
-
+Ques8 : Write a C++ program to input any character and check whether it is the alphabet, digit or special character.
 
 
 
@@ -172,3 +172,15 @@ solution :
 //             cout << "The three points do not fall on a straight line." << endl;
 //         }
 //     }
+
+//8 
+
+#include <iostream>
+using namespace std;
+int main() {
+char ch; cin>>ch;
+if((ch>='A' && ch<='Z') || (ch>='a' && ch<='z')  )  cout<< " is a alpha.";
+else if (ch>='0' && ch<='9' )                       cout<< " is a digit";
+else                                                cout<<" is a special char.";
+}
+
