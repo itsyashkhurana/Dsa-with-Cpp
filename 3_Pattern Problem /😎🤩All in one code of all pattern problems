@@ -155,31 +155,43 @@ void pttrn10(int N){
 cout<<'\n'<<'\n';
 }
 
-// till now done 
 void pttrn11(int N){  // odd line pe odd count pe 1
      // even line pe even count pe 0 
-      for(int i=0;i<N;i++){
+// even number - odd number = odd number
+// odd number - odd number = even number   // j-i = (even % 2 ==0) cout << "1";
+
+      for(int i=1;i<=N;i++){
             
-    for(int j=0;j<i+1;j++){
-        cout<<"*";
+    for(int j=1;j<=i;j++){
+        if((j-i)%2==0) cout<<"1"<<" ";
+        else cout<<"0"<<" ";
     }
     cout<<'\n';
 }
- 
  
 cout<<'\n'<<'\n';
 }
 
 void pttrn12(int N){
-    for(int i=0;i<N;i++){
-    for(int j=0;j<N;j++){
-        cout<<"* ";
-    }
-    cout<<'\n';
+    int spaces = 2*(N-1); 
+for(int i=1;i<=N;i++){
+     for(int j=1;j<=i;j++){
+         cout<<j;
+     }
+ 
+     for(int j=1;j<=spaces;j++){
+         cout<<" ";
+     }
+   for(int j=i;j>=1;j--){
+              cout<<j;
+          }
+     
+ cout<<'\n';
+ spaces-=2;
 }
 cout<<'\n'<<'\n';
 }
-
+// till now 
 void pttrn13(int N){
     for(int i=0;i<N;i++){
     for(int j=0;j<N;j++){
