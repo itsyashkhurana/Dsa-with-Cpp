@@ -1,0 +1,299 @@
+#include <bits/stdc++.h>
+using namespace std;
+void pttrn1(int N){
+    for(int i=0;i<N;i++){
+    for(int j=0;j<N;j++){
+        cout<<"* ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+
+void pttrn2(int N){
+    for(int i=0;i<N;i++){
+    for(int j=0;j<=i;j++){
+        cout<<"* ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+
+void pttrn3(int N){ 
+    for(int i=1;i<=N;i++){
+    for(int j=1;j<=i;j++){
+        cout<<j<<" ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn4(int N){
+    for(int i=1;i<=N;i++){
+    for(int j=1;j<=i;j++){
+        cout<<i<<" ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn5(int N){
+    for(int i=0;i<N;i++){
+    for(int j=1;j<=N-i;j++){ 
+        cout<<"* ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn6(int N){
+    for(int i=0;i<N;i++){
+    for(int j=1;j<=N-i;j++){
+        cout<<j <<" ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn7(int N){
+    for(int i=0;i<N;i++){
+    for(int j=0;j<N-1-i;j++){
+        cout<<" ";
+    }
+    for(int j=0;j<i*2 +1;j++){
+        cout<<"*";
+    }
+     for (int j =0; j<N-i-1; j++)
+        {
+            cout <<" ";
+        }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn8(int N){
+    for(int i=0;i<N;i++){
+        for (int j =0; j<i; j++)
+        {
+            cout <<" ";
+        }
+    for(int j=1;j<=2*N-1-2*i;j++){
+        cout<<"*";
+    }
+    for (int j =0; j<i; j++)
+        {
+            cout <<" ";
+        }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn9(int N){
+    
+        for(int i=0;i<N;i++){
+    for(int j=0;j<N-1-i;j++){
+        cout<<" ";
+    }
+    for(int j=0;j<i*2 +1;j++){
+        cout<<"*";
+    }
+     for (int j =0; j<N-i-1; j++)
+        {
+            cout <<" ";
+        }
+    cout<<'\n';
+}
+
+
+ for(int i=0;i<N;i++){
+        for (int j =0; j<i; j++)
+        {
+            cout <<" ";
+        }
+    for(int j=1;j<=2*N-1-2*i;j++){
+        cout<<"*";
+    }
+    for (int j =0; j<i; j++)
+        {
+            cout <<" ";
+        }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+
+}
+
+void pttrn10(int N){
+   
+        for(int i=0;i<N;i++){
+            
+    for(int j=0;j<i+1;j++){
+        cout<<"*";
+    }
+    cout<<'\n';
+}
+
+
+ for(int i=0;i<N-1;i++){
+       
+    for(int j=1;j<=(N-1)-i;j++){
+        cout<<"*";
+    }
+    
+    cout<<'\n';
+}
+
+cout<<'\n'<<'\n';
+}
+
+// till now done 
+void pttrn11(int N){  // odd line pe odd count pe 1
+     // even line pe even count pe 0 
+      for(int i=0;i<N;i++){
+            
+    for(int j=0;j<i+1;j++){
+        cout<<"*";
+    }
+    cout<<'\n';
+}
+ 
+ 
+cout<<'\n'<<'\n';
+}
+
+void pttrn12(int N){
+    for(int i=0;i<N;i++){
+    for(int j=0;j<N;j++){
+        cout<<"* ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn13(int N){
+    for(int i=0;i<N;i++){
+    for(int j=0;j<N;j++){
+        cout<<"* ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn14(int N){
+    for(int i=0;i<N;i++){
+    for(int j=0;j<N;j++){
+        cout<<"* ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn15(int N){
+    for(int i=0;i<N;i++){
+    for(int j=0;j<N;j++){
+        cout<<"* ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn16(int N){
+    for(int i=0;i<N;i++){
+    for(int j=0;j<N;j++){
+        cout<<"* ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn17(int N){
+    for(int i=0;i<N;i++){
+    for(int j=0;j<N;j++){
+        cout<<"* ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn18(int N){
+    for(int i=0;i<N;i++){
+    for(int j=0;j<N;j++){
+        cout<<"* ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn19(int N){
+    for(int i=0;i<N;i++){
+    for(int j=0;j<N;j++){
+        cout<<"* ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn20(int N){
+    for(int i=0;i<N;i++){
+    for(int j=0;j<N;j++){
+        cout<<"* ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttrn21(int N){
+    for(int i=0;i<N;i++){
+    for(int j=0;j<N;j++){
+        cout<<"* ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+void pttr22(int N){
+    for(int i=0;i<N;i++){
+    for(int j=0;j<N;j++){
+        cout<<"* ";
+    }
+    cout<<'\n';
+}
+cout<<'\n'<<'\n';
+}
+
+int main() {
+// All in One Code for Pattern Problem 
+int N;
+cin>>N;
+
+pttrn1(N);
+pttrn2(N);
+pttrn3(N);
+pttrn4(N);
+pttrn5(N);
+pttrn6(N);
+pttrn7(N);
+pttrn8(N);
+pttrn9(N);
+pttrn10(N);
+pttrn11(N);
+}
