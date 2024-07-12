@@ -191,11 +191,13 @@ for(int i=1;i<=N;i++){
 }
 cout<<'\n'<<'\n';
 }
-// till now 
+
 void pttrn13(int N){
-    for(int i=0;i<N;i++){
-    for(int j=0;j<N;j++){
-        cout<<"* ";
+   int num(1);
+    for(int i=1;i<=N;i++){
+    for(int j=1;j<=i;j++){
+        cout<<num<<" ";
+        num++;
     }
     cout<<'\n';
 }
@@ -203,9 +205,10 @@ cout<<'\n'<<'\n';
 }
 
 void pttrn14(int N){
-    for(int i=0;i<N;i++){
-    for(int j=0;j<N;j++){
-        cout<<"* ";
+        int num(1);
+    for(int i=1;i<=N;i++){
+    for(int j=1;j<=i;j++){
+         cout<<char(j+ 64)<<" ";
     }
     cout<<'\n';
 }
@@ -213,83 +216,184 @@ cout<<'\n'<<'\n';
 }
 
 void pttrn15(int N){
-    for(int i=0;i<N;i++){
-    for(int j=0;j<N;j++){
-        cout<<"* ";
-    }
+   for(int i=1;i<=N;i++){
+    for(int j=0;j<=N-i;j++){
+         cout<<char(j+ 65)<<" ";
+         
+     }
     cout<<'\n';
 }
 cout<<'\n'<<'\n';
 }
 
 void pttrn16(int N){
-    for(int i=0;i<N;i++){
-    for(int j=0;j<N;j++){
-        cout<<"* ";
-    }
+    for(int i=1;i<=N;i++){
+   for(int j=1;j<=i;j++){
+         cout<<char(i+ 64)<<" ";
+         
+     }
     cout<<'\n';
 }
 cout<<'\n'<<'\n';
 }
 
 void pttrn17(int N){
-    for(int i=0;i<N;i++){
-    for(int j=0;j<N;j++){
-        cout<<"* ";
-    }
+for(int i=1;i<=N;i++){
+    int spaces = N-i;
+    for(int j=1;j<=spaces;j++){// 4 3 2 1 
+          cout<<" ";
+      }
+        for(int j=1;j<=i;j++){
+         cout<<char(j + 64);
+     }
+     if(i>=2){
+         for(int j=i-1;j>=1;j--){
+              cout<<char(j + 64);
+          }
+ }
+
     cout<<'\n';
 }
 cout<<'\n'<<'\n';
 }
 
+
 void pttrn18(int N){
-    for(int i=0;i<N;i++){
-    for(int j=0;j<N;j++){
-        cout<<"* ";
-    }
+    for(int i=1;i<=N;i++){
+  for(int j=1;j<=i;j++){
+         cout<<char(j + 69-i)<<" "; //69,E   
+     }
     cout<<'\n';
 }
 cout<<'\n'<<'\n';
 }
 
 void pttrn19(int N){
-    for(int i=0;i<N;i++){
-    for(int j=0;j<N;j++){
-        cout<<"* ";
-    }
-    cout<<'\n';
+   int space = 0;
+for(int i=0;i<N;i++){
+     for(int j=N-i;j>0;j--){
+         cout<<"*";
+     }
+     for(int j=1;j<=space;j++){// 8 .6 4 2 
+         cout<<" ";
+     }
+   for(int j=N-i;j>0;j--){
+              cout<<"*";
+          }
+     
+ cout<<'\n';
+ space+=2;
+}
+    
+    
+     
+      int spaces = 2*(N-1); 
+      
+ 
+      
+for(int i=1;i<=N;i++){
+     for(int j=1;j<=i;j++){
+         cout<<"*";
+     }
+     for(int j=1;j<=spaces;j++){// 8 .6 4 2 
+         cout<<" ";
+     }
+   for(int j=i;j>=1;j--){
+              cout<<"*";
+          }
+     
+ cout<<'\n';
+ spaces-=2;
+}
 }
 cout<<'\n'<<'\n';
 }
 
 void pttrn20(int N){
-    for(int i=0;i<N;i++){
-    for(int j=0;j<N;j++){
-        cout<<"* ";
-    }
-    cout<<'\n';
+   int space = 2*N-2;
+for(int i=1;i<=N;i++){
+     for(int j=1;j<=i;j++){
+         cout<<"*";
+     }
+     for(int j=1;j<=space;j++){
+         cout<<" ";
+     }
+   for(int j=1;j<=i;j++){
+              cout<<"*";
+          }
+     
+ cout<<'\n';
+ space-=2;
+}
+    
+    
+     
+      int spaces = 2; 
+      
+ 
+      
+for(int i=1;i<=N-1;i++){
+     for(int j=1;j<=N-i;j++){
+         cout<<"*";
+     }
+     for(int j=1;j<=spaces;j++){//
+         cout<<" ";
+     }
+   for(int j=1;j<=N-i;j++){
+              cout<<"*";
+          }
+     
+ cout<<'\n';
+ spaces+=2;
+}
+     
+   
 }
 cout<<'\n'<<'\n';
 }
 
 void pttrn21(int N){
-    for(int i=0;i<N;i++){
-    for(int j=0;j<N;j++){
-        cout<<"* ";
-    }
-    cout<<'\n';
-}
+   for(int i=0;i<N;i++){
+
+         for(int j=0;j<N;j++){
+             
+             if(i==0 || j==0 || i==N-1 || j==N-1)
+                cout<<"*";
+             else cout<<" ";
+         }
+          cout<<endl;
+     }
 cout<<'\n'<<'\n';
 }
 
 void pttr22(int N){
-    for(int i=0;i<N;i++){
-    for(int j=0;j<N;j++){
-        cout<<"* ";
-    }
-    cout<<'\n';
-}
-cout<<'\n'<<'\n';
+ for(int i=0;i<2*N-1;i++){
+         
+         // inner loop for no. of columns.
+         for(int j=0;j<2*N-1;j++){
+             
+             // Initialising the top, down, left and right indices of a cell.
+             int top = i;
+             int bottom = j;
+             int right = (2*N - 2) - j;
+             int left = (2*N - 2) - i;
+             
+             // Min of 4 directions and then we subtract from n
+             // because previously we would get a pattern whose border
+             // has 0's, but we want with border N's and then decreasing inside.
+             cout<<(N- min(min(top,bottom), min(left,right)))<<" ";
+         }
+         
+         // As soon as the numbers for each iteration are printed, we move to the
+         // next row and give a line break otherwise all numbers
+         // would get printed in 1 line.
+         cout<<endl;
+     }
+     
+     
+ cout<<'\n';
+
+
 }
 
 int main() {
@@ -308,4 +412,15 @@ pttrn8(N);
 pttrn9(N);
 pttrn10(N);
 pttrn11(N);
+pttrn12(N);
+pttrn13(N);
+pttrn14(N);
+pttrn15(N);
+pttrn16(N);
+pttrn17(N);
+pttrn18(N);
+pttrn19(N);
+pttrn20(N);
+pttrn21(N);
+pttrn22(N);
 }
