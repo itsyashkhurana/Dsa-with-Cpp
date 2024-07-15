@@ -17,15 +17,20 @@ using namespace std;
 
 vector<int> findDivisors(int n) {
     vector<int> divisors; 
+    int sum=0;
     int sqrtN = sqrt(n); 
     for (int i = 1; i <= sqrtN; ++i) { //1 to  6 
         if (n % i == 0) {               // 1,2 ,3, 4 ,6 
             divisors.push_back(i); 
+            sum+=i;
+            
             if (i != n / i) {   //  36/4 = 9//i->1,2,3,4 = (36,18,12,9)
                 divisors.push_back(n / i); 
+                sum+=(n/i);
             }
         }
     }
+    
    return divisors; 
  
 }
@@ -33,13 +38,19 @@ int main() {
     int number = 36;
     vector<int> divisors = findDivisors(number);
     sort(divisors.begin(),divisors.end());
+    int sum=0;
 
     cout << "Divisors of " << number << " are: ";
     
      for (auto divisor : divisors) {
         cout << divisor << " ";
+        sum+=divisor;
     }
+    
     cout << endl;
+    cout<<"sum of all divisor "<<sum<<endl;
 }
-   
+                                
+                            
+
      
