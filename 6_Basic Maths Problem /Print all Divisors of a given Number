@@ -8,3 +8,35 @@ cin>>N;
         if( N%i==0) cout<<i<<" ";
        }
 }
+
+
+//using vector 
+#include <bits/stdc++.h>                
+using namespace std;
+
+vector<int> findDivisors(int n) {
+    vector<int> divisors; 
+    int sqrtN = sqrt(n); 
+    for (int i = 1; i <= sqrtN; ++i) { //1 to  6 
+        if (n % i == 0) {               // 1,2 ,3, 4 ,6 
+            divisors.push_back(i); 
+            if (i != n / i) {   //  36/4 = 9//i->1,2,3,4 = (36,18,12,9)
+                divisors.push_back(n / i); 
+            }
+        }
+    }
+   return divisors; 
+ 
+}
+int main() {
+    int number = 36;
+    vector<int> divisors = findDivisors(number);
+
+    cout << "Divisors of " << number << " are: ";
+    
+     for (int divisor : divisors) {
+        cout << divisor << " ";
+    }
+    cout << endl;
+}
+     
