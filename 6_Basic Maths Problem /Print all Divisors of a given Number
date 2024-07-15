@@ -36,7 +36,7 @@ int main() {
 
     cout << "Divisors of " << number << " are: ";
     
-     for (int divisor : divisors) {
+     for (auto divisor : divisors) {
         cout << divisor << " ";
     }
     cout << endl;
