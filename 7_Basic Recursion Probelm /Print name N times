@@ -1,0 +1,23 @@
+ #include<bits/stdc++.h>                               
+#include <algorithm>
+using namespace std;
+void  f(int i,int N){
+    if(i>N)
+    return;
+    
+    cout<<"Yash"<<" ";
+    f(i+1,N);
+}
+void name(int N){
+    f(1,N);
+}
+
+int main() {
+int N ;
+cin>>N;
+name(N);
+
+
+}
+
+            
