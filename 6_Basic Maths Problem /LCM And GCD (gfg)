@@ -1,0 +1,10 @@
+    vector<long long> lcmAndGcd(long long A , long long B) {
+        
+        long long Ans1 = __gcd<int64_t>(A,B);   // Inbuild Function 
+        long long lcmAns = (A*B)/(Ans1);   // Formula LCM*GCD = A*B  
+        vector<long long> ans;              // Create Vector Array 
+        ans.emplace_back(lcmAns);         // Store value of LCM
+        ans.emplace_back(Ans1);           // Store value  of GCD
+        return ans;
+        
+    }
