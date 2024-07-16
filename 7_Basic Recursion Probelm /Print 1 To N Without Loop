@@ -1,1 +1,13 @@
-// 
+void   f(int N, int i){
+if(i>N) 
+return ;
+
+cout<<i<<" ";
+i++;
+f(N,i);
+}
+
+void printNo(int N){
+
+   f(N,1);
+}
