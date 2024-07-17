@@ -1,0 +1,35 @@
+// using parameterised 
+
+#include <bits/stdc++.h>
+using namespace std;
+void f(int i ,int sum){
+    if(i<1){
+        cout<<sum;
+        return ;
+    }
+    f(i-1,sum+i);
+}
+int main() {
+int N =3;
+f(N,0);
+
+
+}
+
+
+// using functional 
+
+#include <bits/stdc++.h>
+using namespace std;
+int sum(int N){
+    if(N==0){
+        return 0;
+    }
+return N + sum(N-1);
+}
+int main() {
+int N =3;
+ int f=sum(N);
+cout<<f;
+
+}
