@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+vector<ll> factorialNumbers(ll n) {
+        vector<ll> ans;
+        ll fact = 1;
+        int x = 2;
+
+        // Iterating until factorial is less than or equal to N.
+        while (fact <= n) {
+            // Adding factorial to the answer list.
+            ans.push_back(fact);
+
+            // Calculating next factorial by multiplying with next number.
+            fact = fact * x;
+            x++;
+        }
+        // Returning the list of factorial numbers.
+        return ans;
+    }
+int main() {
+vector<ll> ans1=  factorialNumbers(120);
+for (auto num: ans1){
+    cout<< num<< " ";
+}
+
+}
