@@ -1,0 +1,60 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+set<int>  s; // if you want print in decending order then use this line, set<int,greater<int>> s;
+s.insert(10);
+s.insert(20);
+s.insert(30);
+s.insert(10);
+s.insert(40);
+s.insert(50);
+s.insert(20);
+
+
+
+for(auto it =s.begin();it!=s.end();it++){
+     cout<<*(it)<<" ";
+}
+cout<<"\n";
+
+// search the element - find
+if(s.find(40) !=s.end()) cout<<"present\n";
+else cout<<"Absent\n";
+
+// count - count of that number , cout<<s.count(210); // print 0 becauase 210 not present 
+// cout<<s.erase(30);  // after erase give 1 
+
+
+}
+
+// other way 
+/*
+#include<bits/stdc++.h>
+using namespace std;
+class person{
+    public:
+    int age;
+    string name;
+    bool operator<(const person &other) const {
+        return age<other.age;
+    }
+};
+int main(){
+set<person>  s;
+person p1,p2,p3;
+p1.age = 10, p1.name="Yash";
+p2.age = 12, p2.name="Rohit";
+p3.age = 13, p3.name="Mohit";
+
+s.insert(p1);
+s.insert(p2);
+s.insert(p3);
+
+
+for(auto it =s.begin();it!=s.end();it++){
+     cout<<it->age<<" "<<it->name<<"\n";
+}
+cout<<"\n";
+
+}
+*/
