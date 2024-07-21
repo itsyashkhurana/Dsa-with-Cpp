@@ -1,3 +1,4 @@
+// using pair with the help of function 
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -8,3 +9,33 @@ void explainpairs (){
 int main() {
 explainpairs();
 }
+
+// Another Method to create pair 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+pair<int,pair<string,int>> Helo_p;
+Helo_p = make_pair(55,make_pair("Yash",22));
+
+cout<<Helo_p.first<<" "<<Helo_p.second.first<<" "<<Helo_p.second.second;
+
+}
+
+// Another Method to create pair
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+pair<int,pair<string,int>> Helo_p;
+
+Helo_p.first = 55;
+Helo_p.second.first= "Yash";
+Helo_p.second.second = 22;
+
+cout<<Helo_p.first<<" "<<Helo_p.second.first<<" "<<Helo_p.second.second;
+
+}
+
