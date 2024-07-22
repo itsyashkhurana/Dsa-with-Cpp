@@ -3,7 +3,7 @@ using namespace std;
 int main(){
 list<int> li;
 li.push_back(30);
-li.push_back(50);
+li.push_back(57);
 li.push_back(60);
 li.push_back(70);
 li.push_front(99);
