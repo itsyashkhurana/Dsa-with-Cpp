@@ -25,9 +25,9 @@ int main() {
     int arr[] = {64, 25, 12, 22, 11, 90 , 70};
     int n = sizeof(arr) / sizeof(arr[0]);
 
- /* In this example, sizeof(arr) is the total size of the array, which is 24 bytes 
+ /* In this example, sizeof(arr) is the total size of the array, which is 28 bytes 
   (assuming int is 4 bytes on your system). sizeof(arr[0]) is the size of an integer,
-   which is 4 bytes. Therefore, n will be calculated as 24 bytes / 4 bytes = 6.     */
+   which is 4 bytes. Therefore, n will be calculated as 28 bytes / 4 bytes = 7.     */
 
     selectionSort(arr, n);
 
