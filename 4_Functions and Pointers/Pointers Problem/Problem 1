@@ -1,4 +1,21 @@
-ques: 
+// 
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int x=77;
+    int* p = &x;
+    cout<<p<<endl;
+    cout<<&x;
+
+}
+
+// Your Output
+0x7ffdfca767fc
+0x7ffdfca767fc
+
+
 
 
 
