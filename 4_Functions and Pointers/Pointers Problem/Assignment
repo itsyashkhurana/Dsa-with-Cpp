@@ -1,2 +1,70 @@
 // Q1 : Write a program to find the product of two numbers using pointers.
 
+#include <iostream>
+using namespace std;
+int main() {
+    int x,y;
+    cin>>x>>y;
+    int *P1,*P2;
+    P1 = &x;
+    P2 = &y;
+    int ans;
+    int *PtrAns = &ans;
+    *PtrAns = (*P1) * (*P2);
+    cout<<*PtrAns;
+    
+}
+
+// Q2 : int *p, q;
+p is a pointer and q is an integer.
+p and q both are pointers.
+P and q both are integers.
+Syntax is incorrect.
+
+
+Solution :
+p is a pointer and q is an integer. * is grouped with variables, not data types.
+
+
+//  Q3: Find the output of the following code snippet.
+int a = 10, b = 20;
+int *ptr = &a;
+b = *ptr + 1;
+ptr = &b;
+cout << *ptr << ‘ ‘ << a << ‘ ‘ << b;
+11 11 10
+10 10 10
+11 10 11
+10 11 10
+
+Solution :
+
+11 10 11
+ptr points to a, b = a + 1 , so ptr points to b
+
+
+// Q4: Find the output of the following code snippet.
+int a = 15, b = 20;
+int *ptr = &a;
+int *ptr2 = &b;
+*ptr = *ptr2;
+ptr now points to b
+ptr2 now points to a
+a gets value of b
+b gets value of a
+
+Solution :
+a gets the value of b
+
+// Q5: Is the following program snippet correct?
+
+int a = 10, b = 20;
+int *ptr;
+*ptr = 5;
+
+Solution :
+The program is correct and will compile but might result in runtime error.This is
+because ptr will have a garbage address which might even point to a location which
+does not belong to our program and hence might result in Segmentation Fault when we
+are trying to access it.
+
