@@ -1,0 +1,8 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+  int colours[] = {1, 0, 1};
+// To print the elements in the console:
+for(int colour : colours)
+cout << colour <<  ", ";
+}
