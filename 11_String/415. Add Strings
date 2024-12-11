@@ -28,6 +28,6 @@ string add(string num1,string num2){
          if(num1.size()<num2.size())
          return add(num2,num1);
          else
-         return add(nums1, num2);
+         return add(num1, num2);
     }
 };
