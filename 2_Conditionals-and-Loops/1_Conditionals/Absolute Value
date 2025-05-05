@@ -4,7 +4,8 @@ Ques: Given an integer. Print the absolute value of that integer.
 n =|7| =7 
 ↳ |-3| =3
 
-cout<<"Enter an integer";
+
+cout<<"Enter an integer"; 
 int n;
 cin>>n;
 if(n > 0){
