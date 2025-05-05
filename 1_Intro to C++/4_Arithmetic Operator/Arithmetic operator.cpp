@@ -2,7 +2,7 @@
 the same way as they do in algebra. 
 */ 
 
-#include<iostream>
+#include <bits/stdc++.h>
 using namespace std;
 int main() {
  int x = 5;
